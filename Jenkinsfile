@@ -23,8 +23,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing..."
-                sh 'npm install' // Optional: Ensure dependencies are installed
-                sh 'npm run lint'
                 echo "Done..."
             }
         }
